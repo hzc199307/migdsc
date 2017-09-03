@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>米格DSC月刊201708</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>MIG 数据服务中心 | 月刊 2017.08</h1>
+<h2>1. 平台建设情况</h2>
+<h3>【数据平台组】</h3>
+<p>随着业务的不断接入，对平台的易用性、稳定性、性能都有了更高的要求，数据平台组各同学在考验中快速进步。
+工厂2.0日常运行作业达到100个。
+小黑屋分享会持续进行中，收益听众从中心扩大至部门。</p>
+<h3>【决策分析组】</h3>
+<p>1、天玑第一轮用户分析与调研，更加了解决策用户画像与需求，制定短期优化计划与天玑2.0设计的初稿
+2、智能硬件-手机大盘、专题报告、lucy问答图表、行业竞品排行榜等新功能上线
+3、天玑参与的短视频行业分析得到浏览器VP-cham认可
+4、与用研、战略、浏览器、手管等业务的价值闭环合作持续进行</p>
+<h3>【北京分析组】</h3>
+<p>实现SHOW平台跨终端(PC、ios、android)访问，且第三方应用零成本接入；平台提供六套展示风格，可自定义页面风格。预计月底上线移动端</p>
+<h3>【灯塔产品组】</h3>
+<p>完成了灯塔应用统计新版上线（目前灰度发布中）。基于参与外部市场竞争的目标，优化了数据计算效率、Web后台服务性能、前端整体交互体验。
+Next.beacon.tencent.com</p>
+<h3>【挖掘应用组】</h3>
+<h3>【业务分析组】</h3>
+<h2>2. MINI项目--顺利毕业啦</h2>
+<h3>中期答辩</h3>
+<h3>尽情地讨论、专注地撸代码</h3>
+<h3>攀岩</h3>
+<h3>结业颁奖</h3>
+<h2>3. DSC月度会议</h2>
+<p>台风天也挡不住我们爱学习的心！</p>
+<h3>灯塔组 祝佳 --- 产品的套路</h3>
+<p>“此生走过最长的路就是产品的套路”</p>
+<p><img src="imgs/3_1.jpg" /> </p>
+<p>佳哥从花时间分析需求的必要性、2B端需求分析、需求分析方法三个方面，层层递进地进行了分享。在问答环节分享了灯塔应用统计版的5层拆解，k总希望有一些更深入的探讨，并在部门再做一次分享。</p>
+<h3>安总 --- 土鳖方法论</h3>
+<p>“最接地气的方法论”</p>
+<p><img src="imgs/3_2.jpg" /></p>
+<p>Andy结合中心各位同学的趣事，讲述了自己在学习、量化、洞察、沟通四个模块的观察和方法论，期间用不同的例子来进行说明，让在座的老鹅们、特别是职场新鹅们深受启发。</p>
+<h2>4. 今月头条</h2>
+<h3>4.1. MIG部门经理即使激励奖</h3>
+<p>跨团队协作奖--Woodiewu(吴栋)</p>
+<p>即时激励个人奖--Rafaelxie(谢扬成)</p>
+<p><img src="imgs/4_1.jpg" /></p>
+<h3>4.2. MIG篮球联赛灯塔天玑队6战5胜</h3>
+<p>啦啦队的美女们各种秀长腿喊口号让球员们热血沸腾；有安西教练之称的刘总多次亲临现场给球队加油助威，让队员们力量无穷；K总在场边不断给予队员战术支持，让队员打得很有章法；球员们在赛场上热血拼搏，让比赛十分精彩。</p>
+<p>最专业的教练，最负责的秘书团队，最美艳的拉拉队，最给力的球员，我们灯塔天玑队打赢了一场又一场比赛。</p>
+<p><img src="imgs/4_2_1.jpg" /></p>
+<p><img src="imgs/4_2_0.jpg" /></p>
+<h3>4.3. 五星员工</h3>
+<p>恭喜Royzuo(左肖)、Emilyjmli(李金梅)、Meihuali(李梅花)、Zhhwang(王振华)和Jonezhang(张肇勇)获得五星；再次恭喜花姐获得双五星。</p>
+<p><img src="imgs/4_3.png" /></p>
+<h3>4.4. 部门新睿动力营</h3>
+<p>剑术学习&amp;对打体验+沙龙座谈会</p>
+<p>经过亮点多多的自我介绍、基情浪漫的组队、认真的剑术学习、紧张激动的PK赛之后，听了各位老司机的干货分享，玩的尽兴，也收获颇多。</p>
+<p><img src="imgs/4_4.jpg" /></p>
+<h2>5. 越策越开心</h2>
+<h3>5.1. DSC新文化衫？DSC帮会会服！</h3>
+<p>背后一条龙，霸气！（想想一起穿出去的场景，是不是很霸气呢~）</p>
+<p>寓意“游刃有余”“鱼跃龙门”，“安全感”倍增！</p>
+<p><img src="imgs/5_1.jpg" /></p>
+<h4>5.2. 花姐的公众号粉丝突破1000人大关！</h4>
+<p>安总强烈建议“玩转数据分析”改名为“数据梅花庄”！</p>
+<p><img src="imgs/5_2.jpg" /></p>
+<h4>5.3. 安总出差入套路，连赚14波延误险</h4>
+<p><img src="imgs/5_3.jpg" /></p>
+<h4>5.4. 工厂男神密会美女主播</h4>
+<p>震惊！丹哥哥居然对男神做出这样的事！</p>
+<p><img src="imgs/5_4.jpg" /></p>
+<h4>5.5. 深受小朋友欢迎的小G哥</h4>
+<p>&quot;小G哥哥别结婚，等我长大！&quot;</p>
+<p><img src="imgs/5_5_0.jpg" /></p>
+<h4>5.6. 泊松大哥深情演唱《我不做大哥好多年》</h4>
+<p>这个拿话筒的姿势，巨有范！</p>
+<p><img src="imgs/5_6.jpg" /></p>
+<h4>5.7. 8月15日羽毛球&amp;婚恋大讲堂</h4>
+<p>下班了，打打球，聊聊八卦！</p>
+<p><img src="imgs/5_7.jpg" /></p>
+<h4>5.8. 厂长说可以考虑买个宅子吃蟹</h4>
+<p>厂长就是任性！</p>
+<p><img src="imgs/5_8.jpg" /></p>
+<h2>小鲜鹅</h2>
+<h3>业务分析组 Mayaliu(刘诗超)</h3>
+<p>来自广东中山，本科毕业于复旦大学社会学，硕士就读于香港中文大学社会学，喜欢游泳和徒步。</p>
+<p>附上妹纸的美照~</p>
+<p><img src="imgs/liushichao.jpg" /> </p>
+<h3>数据平台组 Jipengli(李继蓬)</h3>
+<p>来自广东汕头，平时喜欢跑步，之前在北京工作，刚刚在深圳有了自己温馨的小家庭~</p>
+<p><img src="imgs/lijipeng.jpg" /> </p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
